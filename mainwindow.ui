@@ -1,0 +1,1489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1021</width>
+                <height>1077</height>
+            </rect>
+        </property>
+        <property name="sizePolicy">
+            <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+            </sizepolicy>
+        </property>
+        <property name="windowTitle">
+            <string>Corrector de tareas</string>
+        </property>
+        <property name="autoFillBackground">
+            <bool>false</bool>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QGridLayout" name="gridLayout_10">
+                <item row="0" column="0" rowspan="2">
+                    <widget class="QGroupBox" name="alumnoGroup">
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="styleSheet">
+                            <string notr="true"/>
+                        </property>
+                        <property name="title">
+                            <string>Alumno</string>
+                        </property>
+                        <property name="flat">
+                            <bool>false</bool>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_6">
+                            <item row="0" column="0">
+                                <layout class="QGridLayout" name="alumnoLayout" rowstretch="0"
+                                        columnstretch="0,0,0,0,0,0">
+                                    <property name="horizontalSpacing">
+                                        <number>10</number>
+                                    </property>
+                                    <property name="verticalSpacing">
+                                        <number>0</number>
+                                    </property>
+                                    <item row="0" column="4">
+                                        <spacer name="alumnoSpacer">
+                                            <property name="orientation">
+                                                <enum>Qt::Horizontal</enum>
+                                            </property>
+                                            <property name="sizeHint" stdset="0">
+                                                <size>
+                                                    <width>100</width>
+                                                    <height>20</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                    </item>
+                                    <item row="0" column="2">
+                                        <widget class="QPushButton" name="alumnoPreviousBtn">
+                                            <property name="sizePolicy">
+                                                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                                    <horstretch>10</horstretch>
+                                                    <verstretch>0</verstretch>
+                                                </sizepolicy>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>45</width>
+                                                    <height>45</height>
+                                                </size>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>45</width>
+                                                    <height>45</height>
+                                                </size>
+                                            </property>
+                                            <property name="locale">
+                                                <locale language="Spanish" country="Chile"/>
+                                            </property>
+                                            <property name="text">
+                                                <string>◀</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item row="0" column="0">
+                                        <widget class="QLabel" name="alumnoLabel">
+                                            <property name="sizePolicy">
+                                                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                                    <horstretch>0</horstretch>
+                                                    <verstretch>0</verstretch>
+                                                </sizepolicy>
+                                            </property>
+                                            <property name="text">
+                                                <string>Alumno:</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item row="0" column="1">
+                                        <widget class="QComboBox" name="alumnoCombo">
+                                            <property name="sizePolicy">
+                                                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                                    <horstretch>60</horstretch>
+                                                    <verstretch>0</verstretch>
+                                                </sizepolicy>
+                                            </property>
+                                            <property name="frame">
+                                                <bool>false</bool>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item row="0" column="3">
+                                        <widget class="QPushButton" name="alumnoNextBtn">
+                                            <property name="sizePolicy">
+                                                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                                    <horstretch>10</horstretch>
+                                                    <verstretch>0</verstretch>
+                                                </sizepolicy>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>45</width>
+                                                    <height>45</height>
+                                                </size>
+                                            </property>
+                                            <property name="maximumSize">
+                                                <size>
+                                                    <width>45</width>
+                                                    <height>45</height>
+                                                </size>
+                                            </property>
+                                            <property name="locale">
+                                                <locale language="Spanish" country="Chile"/>
+                                            </property>
+                                            <property name="text">
+                                                <string>▶</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item row="0" column="5">
+                                        <widget class="QPushButton" name="viewFBtn">
+                                            <property name="sizePolicy">
+                                                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                                    <horstretch>0</horstretch>
+                                                    <verstretch>0</verstretch>
+                                                </sizepolicy>
+                                            </property>
+                                            <property name="minimumSize">
+                                                <size>
+                                                    <width>45</width>
+                                                    <height>45</height>
+                                                </size>
+                                            </property>
+                                            <property name="text">
+                                                <string>Ver su archivo</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item row="3" column="0">
+                                <widget class="QLabel" name="alumnoCommentLabel">
+                                    <property name="text">
+                                        <string>Comentarios Generales:</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="4" column="0">
+                                <widget class="QPlainTextEdit" name="alumnoCommentTEdit">
+                                    <property name="minimumSize">
+                                        <size>
+                                            <width>324</width>
+                                            <height>70</height>
+                                        </size>
+                                    </property>
+                                    <property name="maximumSize">
+                                        <size>
+                                            <width>16777215</width>
+                                            <height>100</height>
+                                        </size>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="2" column="0">
+                                <widget class="QGroupBox" name="alumoItemGroup">
+                                    <property name="title">
+                                        <string>Item</string>
+                                    </property>
+                                    <property name="flat">
+                                        <bool>false</bool>
+                                    </property>
+                                    <layout class="QGridLayout" name="gridLayout_2" rowstretch="10,10,10,10,10,0">
+                                        <property name="leftMargin">
+                                            <number>3</number>
+                                        </property>
+                                        <property name="topMargin">
+                                            <number>3</number>
+                                        </property>
+                                        <property name="rightMargin">
+                                            <number>3</number>
+                                        </property>
+                                        <property name="bottomMargin">
+                                            <number>3</number>
+                                        </property>
+                                        <property name="horizontalSpacing">
+                                            <number>3</number>
+                                        </property>
+                                        <property name="verticalSpacing">
+                                            <number>10</number>
+                                        </property>
+                                        <item row="0" column="0">
+                                            <layout class="QGridLayout" name="sItemLayout" rowstretch="0"
+                                                    columnstretch="0,0,0,0">
+                                                <property name="horizontalSpacing">
+                                                    <number>10</number>
+                                                </property>
+                                                <property name="verticalSpacing">
+                                                    <number>0</number>
+                                                </property>
+                                                <item row="0" column="0">
+                                                    <widget class="QComboBox" name="sItemCombo">
+                                                        <property name="sizePolicy">
+                                                            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                                                <horstretch>10</horstretch>
+                                                                <verstretch>0</verstretch>
+                                                            </sizepolicy>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="0" column="1">
+                                                    <widget class="QPushButton" name="sItemPreviousBtn">
+                                                        <property name="sizePolicy">
+                                                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                                                <horstretch>10</horstretch>
+                                                                <verstretch>0</verstretch>
+                                                            </sizepolicy>
+                                                        </property>
+                                                        <property name="minimumSize">
+                                                            <size>
+                                                                <width>45</width>
+                                                                <height>45</height>
+                                                            </size>
+                                                        </property>
+                                                        <property name="maximumSize">
+                                                            <size>
+                                                                <width>45</width>
+                                                                <height>45</height>
+                                                            </size>
+                                                        </property>
+                                                        <property name="locale">
+                                                            <locale language="Spanish" country="Chile"/>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>◀</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item row="0" column="3">
+                                                    <spacer name="sItemSpacer">
+                                                        <property name="orientation">
+                                                            <enum>Qt::Horizontal</enum>
+                                                        </property>
+                                                        <property name="sizeHint" stdset="0">
+                                                            <size>
+                                                                <width>100</width>
+                                                                <height>5</height>
+                                                            </size>
+                                                        </property>
+                                                    </spacer>
+                                                </item>
+                                                <item row="0" column="2">
+                                                    <widget class="QPushButton" name="sItemNextBtn">
+                                                        <property name="sizePolicy">
+                                                            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                                                <horstretch>10</horstretch>
+                                                                <verstretch>0</verstretch>
+                                                            </sizepolicy>
+                                                        </property>
+                                                        <property name="minimumSize">
+                                                            <size>
+                                                                <width>45</width>
+                                                                <height>45</height>
+                                                            </size>
+                                                        </property>
+                                                        <property name="maximumSize">
+                                                            <size>
+                                                                <width>45</width>
+                                                                <height>45</height>
+                                                            </size>
+                                                        </property>
+                                                        <property name="locale">
+                                                            <locale language="Spanish" country="Chile"/>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>▶</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </item>
+                                        <item row="3" column="0">
+                                            <layout class="QHBoxLayout" name="scoreLayout">
+                                                <property name="spacing">
+                                                    <number>10</number>
+                                                </property>
+                                                <item>
+                                                    <widget class="QLabel" name="scoreLabel">
+                                                        <property name="text">
+                                                            <string>Puntaje</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <widget class="QSpinBox" name="scoreSpin">
+                                                        <property name="minimumSize">
+                                                            <size>
+                                                                <width>80</width>
+                                                                <height>50</height>
+                                                            </size>
+                                                        </property>
+                                                        <property name="minimum">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="maximum">
+                                                            <number>3</number>
+                                                        </property>
+                                                        <property name="value">
+                                                            <number>0</number>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <widget class="QLabel" name="calculadoLabel">
+                                                        <property name="text">
+                                                            <string>Calculado:</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <widget class="QLineEdit" name="scoreLineEdit">
+                                                        <property name="sizePolicy">
+                                                            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                                                                <horstretch>0</horstretch>
+                                                                <verstretch>2</verstretch>
+                                                            </sizepolicy>
+                                                        </property>
+                                                        <property name="font">
+                                                            <font>
+                                                                <weight>75</weight>
+                                                                <bold>true</bold>
+                                                            </font>
+                                                        </property>
+                                                        <property name="maxLength">
+                                                            <number>25</number>
+                                                        </property>
+                                                        <property name="readOnly">
+                                                            <bool>true</bool>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </item>
+                                        <item row="2" column="0">
+                                            <layout class="QHBoxLayout" name="sfLabelLayout">
+                                                <property name="spacing">
+                                                    <number>20</number>
+                                                </property>
+                                                <item>
+                                                    <widget class="QLabel" name="sfNameLabel">
+                                                        <property name="sizePolicy">
+                                                            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                                                                <horstretch>0</horstretch>
+                                                                <verstretch>0</verstretch>
+                                                            </sizepolicy>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>Nombre de archivo:</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                                <item>
+                                                    <widget class="QLabel" name="sfName">
+                                                        <property name="font">
+                                                            <font>
+                                                                <weight>75</weight>
+                                                                <bold>true</bold>
+                                                            </font>
+                                                        </property>
+                                                        <property name="text">
+                                                            <string>--</string>
+                                                        </property>
+                                                    </widget>
+                                                </item>
+                                            </layout>
+                                        </item>
+                                        <item row="4" column="0">
+                                            <widget class="QLabel" name="sItemCommentLabel">
+                                                <property name="text">
+                                                    <string>Comentarios del item:</string>
+                                                </property>
+                                            </widget>
+                                        </item>
+                                        <item row="5" column="0">
+                                            <widget class="QPlainTextEdit" name="sItemTEdit">
+                                                <property name="minimumSize">
+                                                    <size>
+                                                        <width>312</width>
+                                                        <height>70</height>
+                                                    </size>
+                                                </property>
+                                                <property name="maximumSize">
+                                                    <size>
+                                                        <width>16777215</width>
+                                                        <height>70</height>
+                                                    </size>
+                                                </property>
+                                                <property name="layoutDirection">
+                                                    <enum>Qt::LeftToRight</enum>
+                                                </property>
+                                            </widget>
+                                        </item>
+                                        <item row="1" column="0">
+                                            <spacer name="sitemVSpacer">
+                                                <property name="orientation">
+                                                    <enum>Qt::Vertical</enum>
+                                                </property>
+                                                <property name="sizeHint" stdset="0">
+                                                    <size>
+                                                        <width>20</width>
+                                                        <height>60</height>
+                                                    </size>
+                                                </property>
+                                            </spacer>
+                                        </item>
+                                    </layout>
+                                </widget>
+                            </item>
+                        </layout>
+                    </widget>
+                </item>
+                <item row="0" column="1">
+                    <layout class="QHBoxLayout" name="rubricFExplorerPack">
+                        <item>
+                            <widget class="QGroupBox" name="rubGroup">
+                                <property name="enabled">
+                                    <bool>false</bool>
+                                </property>
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>1</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="locale">
+                                    <locale language="Spanish" country="Chile"/>
+                                </property>
+                                <property name="title">
+                                    <string>Rúbrica</string>
+                                </property>
+                                <layout class="QGridLayout" name="gridLayout_5" rowstretch="0">
+                                    <property name="leftMargin">
+                                        <number>0</number>
+                                    </property>
+                                    <property name="topMargin">
+                                        <number>0</number>
+                                    </property>
+                                    <property name="rightMargin">
+                                        <number>0</number>
+                                    </property>
+                                    <property name="bottomMargin">
+                                        <number>0</number>
+                                    </property>
+                                    <property name="spacing">
+                                        <number>0</number>
+                                    </property>
+                                    <item row="0" column="0">
+                                        <widget class="QStackedWidget" name="rubStacked">
+                                            <property name="mouseTracking">
+                                                <bool>false</bool>
+                                            </property>
+                                            <property name="contextMenuPolicy">
+                                                <enum>Qt::NoContextMenu</enum>
+                                            </property>
+                                            <property name="layoutDirection">
+                                                <enum>Qt::LeftToRight</enum>
+                                            </property>
+                                            <property name="locale">
+                                                <locale language="Spanish" country="Chile"/>
+                                            </property>
+                                            <property name="frameShape">
+                                                <enum>QFrame::NoFrame</enum>
+                                            </property>
+                                            <property name="frameShadow">
+                                                <enum>QFrame::Plain</enum>
+                                            </property>
+                                            <property name="midLineWidth">
+                                                <number>0</number>
+                                            </property>
+                                            <property name="currentIndex">
+                                                <number>0</number>
+                                            </property>
+                                            <widget class="QWidget" name="defaultRub">
+                                                <layout class="QGridLayout" name="gridLayout">
+                                                    <item row="4" column="0">
+                                                        <widget class="QGroupBox" name="rubComGroup">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>45</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="title">
+                                                                <string>Comentarios</string>
+                                                            </property>
+                                                            <layout class="QGridLayout" name="gridLayout_4">
+                                                                <property name="leftMargin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="topMargin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="rightMargin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="bottomMargin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="spacing">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <item row="0" column="0">
+                                                                    <widget class="QPlainTextEdit" name="rubComTEdit">
+                                                                        <property name="maximumSize">
+                                                                            <size>
+                                                                                <width>16777215</width>
+                                                                                <height>150</height>
+                                                                            </size>
+                                                                        </property>
+                                                                        <property name="styleSheet">
+                                                                            <string notr="true">background:transparent
+                                                                            </string>
+                                                                        </property>
+                                                                        <property name="frameShape">
+                                                                            <enum>QFrame::NoFrame</enum>
+                                                                        </property>
+                                                                        <property name="readOnly">
+                                                                            <bool>true</bool>
+                                                                        </property>
+                                                                    </widget>
+                                                                </item>
+                                                            </layout>
+                                                        </widget>
+                                                    </item>
+                                                    <item row="2" column="0">
+                                                        <widget class="QGroupBox" name="rubDescGroup">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                                                    <horstretch>0</horstretch>
+                                                                    <verstretch>45</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="maximumSize">
+                                                                <size>
+                                                                    <width>16777215</width>
+                                                                    <height>100</height>
+                                                                </size>
+                                                            </property>
+                                                            <property name="locale">
+                                                                <locale language="Spanish" country="Chile"/>
+                                                            </property>
+                                                            <property name="title">
+                                                                <string>Descripcion</string>
+                                                            </property>
+                                                            <layout class="QGridLayout" name="gridLayout_3">
+                                                                <property name="leftMargin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="topMargin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="rightMargin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="bottomMargin">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <property name="spacing">
+                                                                    <number>0</number>
+                                                                </property>
+                                                                <item row="0" column="0">
+                                                                    <widget class="QPlainTextEdit" name="rubDescTEdit">
+                                                                        <property name="maximumSize">
+                                                                            <size>
+                                                                                <width>16777215</width>
+                                                                                <height>100</height>
+                                                                            </size>
+                                                                        </property>
+                                                                        <property name="styleSheet">
+                                                                            <string notr="true">background:transparent
+                                                                            </string>
+                                                                        </property>
+                                                                        <property name="frameShape">
+                                                                            <enum>QFrame::NoFrame</enum>
+                                                                        </property>
+                                                                        <property name="readOnly">
+                                                                            <bool>true</bool>
+                                                                        </property>
+                                                                    </widget>
+                                                                </item>
+                                                            </layout>
+                                                        </widget>
+                                                    </item>
+                                                    <item row="0" column="0">
+                                                        <layout class="QHBoxLayout" name="rubLayout">
+                                                            <property name="spacing">
+                                                                <number>10</number>
+                                                            </property>
+                                                            <item>
+                                                                <widget class="QComboBox" name="rubCombo">
+                                                                    <property name="sizePolicy">
+                                                                        <sizepolicy hsizetype="Preferred"
+                                                                                    vsizetype="Expanding">
+                                                                            <horstretch>10</horstretch>
+                                                                            <verstretch>0</verstretch>
+                                                                        </sizepolicy>
+                                                                    </property>
+                                                                    <property name="maximumSize">
+                                                                        <size>
+                                                                            <width>75</width>
+                                                                            <height>45</height>
+                                                                        </size>
+                                                                    </property>
+                                                                </widget>
+                                                            </item>
+                                                            <item>
+                                                                <widget class="QPushButton" name="rubPreviousBtn">
+                                                                    <property name="sizePolicy">
+                                                                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                                                            <horstretch>10</horstretch>
+                                                                            <verstretch>0</verstretch>
+                                                                        </sizepolicy>
+                                                                    </property>
+                                                                    <property name="minimumSize">
+                                                                        <size>
+                                                                            <width>45</width>
+                                                                            <height>45</height>
+                                                                        </size>
+                                                                    </property>
+                                                                    <property name="maximumSize">
+                                                                        <size>
+                                                                            <width>45</width>
+                                                                            <height>45</height>
+                                                                        </size>
+                                                                    </property>
+                                                                    <property name="locale">
+                                                                        <locale language="Spanish" country="Chile"/>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>◀</string>
+                                                                    </property>
+                                                                </widget>
+                                                            </item>
+                                                            <item>
+                                                                <widget class="QPushButton" name="rubNextBtn">
+                                                                    <property name="sizePolicy">
+                                                                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                                                            <horstretch>10</horstretch>
+                                                                            <verstretch>0</verstretch>
+                                                                        </sizepolicy>
+                                                                    </property>
+                                                                    <property name="minimumSize">
+                                                                        <size>
+                                                                            <width>45</width>
+                                                                            <height>45</height>
+                                                                        </size>
+                                                                    </property>
+                                                                    <property name="maximumSize">
+                                                                        <size>
+                                                                            <width>45</width>
+                                                                            <height>45</height>
+                                                                        </size>
+                                                                    </property>
+                                                                    <property name="locale">
+                                                                        <locale language="Spanish" country="Chile"/>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>▶</string>
+                                                                    </property>
+                                                                </widget>
+                                                            </item>
+                                                            <item>
+                                                                <spacer name="rubHSpacer">
+                                                                    <property name="orientation">
+                                                                        <enum>Qt::Horizontal</enum>
+                                                                    </property>
+                                                                    <property name="sizeHint" stdset="0">
+                                                                        <size>
+                                                                            <width>100</width>
+                                                                            <height>20</height>
+                                                                        </size>
+                                                                    </property>
+                                                                </spacer>
+                                                            </item>
+                                                        </layout>
+                                                    </item>
+                                                    <item row="1" column="0">
+                                                        <layout class="QHBoxLayout" name="rubLayout_2">
+                                                            <property name="spacing">
+                                                                <number>10</number>
+                                                            </property>
+                                                            <item>
+                                                                <widget class="QLabel" name="label_2">
+                                                                    <property name="text">
+                                                                        <string>Objetivo:</string>
+                                                                    </property>
+                                                                </widget>
+                                                            </item>
+                                                            <item>
+                                                                <widget class="QLabel" name="rubObjective">
+                                                                    <property name="font">
+                                                                        <font>
+                                                                            <weight>75</weight>
+                                                                            <bold>true</bold>
+                                                                        </font>
+                                                                    </property>
+                                                                    <property name="text">
+                                                                        <string>--</string>
+                                                                    </property>
+                                                                </widget>
+                                                            </item>
+                                                            <item>
+                                                                <spacer name="rubHSpacer_2">
+                                                                    <property name="orientation">
+                                                                        <enum>Qt::Horizontal</enum>
+                                                                    </property>
+                                                                    <property name="sizeHint" stdset="0">
+                                                                        <size>
+                                                                            <width>100</width>
+                                                                            <height>20</height>
+                                                                        </size>
+                                                                    </property>
+                                                                </spacer>
+                                                            </item>
+                                                        </layout>
+                                                    </item>
+                                                </layout>
+                                            </widget>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </widget>
+                        </item>
+                        <item>
+                            <widget class="QGroupBox" name="fExplorerGroup">
+                                <property name="enabled">
+                                    <bool>false</bool>
+                                </property>
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="title">
+                                    <string>Explorador de ejemplos</string>
+                                </property>
+                                <layout class="QGridLayout" name="gridLayout_7">
+                                    <item row="2" column="0">
+                                        <widget class="QPlainTextEdit" name="fExplorerTEdit">
+                                            <property name="styleSheet">
+                                                <string notr="true">background:rgb(234,234,234)</string>
+                                            </property>
+                                            <property name="readOnly">
+                                                <bool>true</bool>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item row="1" column="0">
+                                        <layout class="QHBoxLayout" name="fExplorerBrowseLayout">
+                                            <item>
+                                                <widget class="QLabel" name="label">
+                                                    <property name="text">
+                                                        <string>Viendo:</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QLineEdit" name="fileLineEdit">
+                                                    <property name="enabled">
+                                                        <bool>false</bool>
+                                                    </property>
+                                                    <property name="readOnly">
+                                                        <bool>true</bool>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QPushButton" name="filePushButton">
+                                                    <property name="text">
+                                                        <string>Explorar...</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item row="6" column="0">
+                                        <layout class="QHBoxLayout" name="fExplorerRadioBtns">
+                                            <item>
+                                                <widget class="QRadioButton" name="fExplorerIncludeEd">
+                                                    <property name="sizePolicy">
+                                                        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                                                            <horstretch>2</horstretch>
+                                                            <verstretch>0</verstretch>
+                                                        </sizepolicy>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Incluir Editado</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QRadioButton" name="fExplorerNotInclude">
+                                                    <property name="sizePolicy">
+                                                        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                                                            <horstretch>2</horstretch>
+                                                            <verstretch>0</verstretch>
+                                                        </sizepolicy>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>No incluir</string>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                            <item>
+                                                <widget class="QRadioButton" name="fExplorerInclude">
+                                                    <property name="sizePolicy">
+                                                        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                                                            <horstretch>2</horstretch>
+                                                            <verstretch>0</verstretch>
+                                                        </sizepolicy>
+                                                    </property>
+                                                    <property name="text">
+                                                        <string>Incluir</string>
+                                                    </property>
+                                                    <property name="checked">
+                                                        <bool>true</bool>
+                                                    </property>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </item>
+                                    <item row="4" column="0">
+                                        <widget class="QLabel" name="fExplorerCheckLabel">
+                                            <property name="text">
+                                                <string>Al correr:</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item row="3" column="0">
+                                        <widget class="QLabel" name="fExplorerCheckLabel_2">
+                                            <property name="text">
+                                                <string/>
+                                            </property>
+                                            <property name="wordWrap">
+                                                <bool>true</bool>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </widget>
+                        </item>
+                    </layout>
+                </item>
+                <item row="1" column="1" rowspan="2">
+                    <widget class="QGroupBox" name="scriptTestingGroup">
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="mouseTracking">
+                            <bool>false</bool>
+                        </property>
+                        <property name="contextMenuPolicy">
+                            <enum>Qt::NoContextMenu</enum>
+                        </property>
+                        <property name="layoutDirection">
+                            <enum>Qt::LeftToRight</enum>
+                        </property>
+                        <property name="locale">
+                            <locale language="Spanish" country="Chile"/>
+                        </property>
+                        <property name="title">
+                            <string>Script Testing</string>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_12" rowstretch="0,0,0,0,0,0,0,0,0,0,0">
+                            <item row="10" column="0">
+                                <layout class="QHBoxLayout" name="scripTestungRunLayout" stretch="11,11,0,0,0">
+                                    <item>
+                                        <spacer name="scriptTesttingRunHSpacer">
+                                            <property name="orientation">
+                                                <enum>Qt::Horizontal</enum>
+                                            </property>
+                                            <property name="sizeHint" stdset="0">
+                                                <size>
+                                                    <width>250</width>
+                                                    <height>50</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                    </item>
+                                    <item>
+                                        <widget class="QPushButton" name="scriptTestingRunBtn">
+                                            <property name="sizePolicy">
+                                                <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+                                                    <horstretch>0</horstretch>
+                                                    <verstretch>0</verstretch>
+                                                </sizepolicy>
+                                            </property>
+                                            <property name="text">
+                                                <string>Correr</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <spacer name="horizontalSpacer">
+                                            <property name="orientation">
+                                                <enum>Qt::Horizontal</enum>
+                                            </property>
+                                            <property name="sizeHint" stdset="0">
+                                                <size>
+                                                    <width>40</width>
+                                                    <height>50</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                    </item>
+                                    <item>
+                                        <widget class="QPushButton" name="scriptTestingRunBtn_2">
+                                            <property name="sizePolicy">
+                                                <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+                                                    <horstretch>0</horstretch>
+                                                    <verstretch>0</verstretch>
+                                                </sizepolicy>
+                                            </property>
+                                            <property name="text">
+                                                <string>Nueva Consola</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <spacer name="scriptTesttingRunHSpacer2">
+                                            <property name="orientation">
+                                                <enum>Qt::Horizontal</enum>
+                                            </property>
+                                            <property name="sizeHint" stdset="0">
+                                                <size>
+                                                    <width>250</width>
+                                                    <height>50</height>
+                                                </size>
+                                            </property>
+                                        </spacer>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item row="8" column="0">
+                                <widget class="QPlainTextEdit" name="scriptTestingStderrTEdit">
+                                    <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>0</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="readOnly">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="3" column="0">
+                                <widget class="QLabel" name="scriptTestingStdinLabel">
+                                    <property name="text">
+                                        <string>Input (STD-IN)</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="6" column="0">
+                                <widget class="QPlainTextEdit" name="scriptTestingStdoutTEdit">
+                                    <property name="readOnly">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="7" column="0">
+                                <widget class="QLabel" name="scriptTestingStderrLabel">
+                                    <property name="text">
+                                        <string>Errores (STD-ERR)</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="9" column="0">
+                                <spacer name="verticalSpacer">
+                                    <property name="orientation">
+                                        <enum>Qt::Vertical</enum>
+                                    </property>
+                                    <property name="sizeHint" stdset="0">
+                                        <size>
+                                            <width>20</width>
+                                            <height>60</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </item>
+                            <item row="5" column="0">
+                                <widget class="QLabel" name="scriptTestingStdoutLabel">
+                                    <property name="text">
+                                        <string>Output (STD-OUT)</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="1" column="0">
+                                <widget class="QLabel" name="scriptTestingDescLabel">
+                                    <property name="text">
+                                        <string>Descripcion</string>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item row="2" column="0">
+                                <widget class="QPlainTextEdit" name="scriptTestingDescTedit"/>
+                            </item>
+                            <item row="0" column="0">
+                                <layout class="QHBoxLayout" name="scriptTestingNameLayout">
+                                    <item>
+                                        <widget class="QLabel" name="scriptTestingNameLabel">
+                                            <property name="text">
+                                                <string>Nombre Test (Opcional):</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QLineEdit" name="scriptTestingName"/>
+                                    </item>
+                                    <item>
+                                        <widget class="QCheckBox" name="scriptTestingSaveBox">
+                                            <property name="text">
+                                                <string>Guardar</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                            <item row="4" column="0">
+                                <widget class="QPlainTextEdit" name="scriptTestingStdinTEdit"/>
+                            </item>
+                        </layout>
+                    </widget>
+                </item>
+                <item row="2" column="0">
+                    <widget class="QGroupBox" name="runsGroup">
+                        <property name="enabled">
+                            <bool>false</bool>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                <horstretch>0</horstretch>
+                                <verstretch>15</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="locale">
+                            <locale language="Spanish" country="Chile"/>
+                        </property>
+                        <property name="title">
+                            <string>Script Tests Guardados</string>
+                        </property>
+                        <layout class="QGridLayout" name="gridLayout_8" rowstretch="0">
+                            <property name="leftMargin">
+                                <number>0</number>
+                            </property>
+                            <property name="topMargin">
+                                <number>0</number>
+                            </property>
+                            <property name="rightMargin">
+                                <number>0</number>
+                            </property>
+                            <property name="bottomMargin">
+                                <number>0</number>
+                            </property>
+                            <property name="spacing">
+                                <number>0</number>
+                            </property>
+                            <item row="0" column="0">
+                                <widget class="QStackedWidget" name="runStacked">
+                                    <property name="sizePolicy">
+                                        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                                            <horstretch>0</horstretch>
+                                            <verstretch>10</verstretch>
+                                        </sizepolicy>
+                                    </property>
+                                    <property name="mouseTracking">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="contextMenuPolicy">
+                                        <enum>Qt::NoContextMenu</enum>
+                                    </property>
+                                    <property name="layoutDirection">
+                                        <enum>Qt::LeftToRight</enum>
+                                    </property>
+                                    <property name="locale">
+                                        <locale language="Spanish" country="Chile"/>
+                                    </property>
+                                    <property name="frameShape">
+                                        <enum>QFrame::NoFrame</enum>
+                                    </property>
+                                    <property name="frameShadow">
+                                        <enum>QFrame::Plain</enum>
+                                    </property>
+                                    <property name="midLineWidth">
+                                        <number>0</number>
+                                    </property>
+                                    <property name="currentIndex">
+                                        <number>0</number>
+                                    </property>
+                                    <widget class="QWidget" name="runsDefault">
+                                        <layout class="QGridLayout" name="gridLayout_9">
+                                            <item row="0" column="0">
+                                                <layout class="QHBoxLayout" name="runsLayout">
+                                                    <property name="spacing">
+                                                        <number>10</number>
+                                                    </property>
+                                                    <item>
+                                                        <widget class="QComboBox" name="runsCombo">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                                                                    <horstretch>10</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QPushButton" name="runsPreviousBtn">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                                                    <horstretch>10</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="minimumSize">
+                                                                <size>
+                                                                    <width>45</width>
+                                                                    <height>45</height>
+                                                                </size>
+                                                            </property>
+                                                            <property name="maximumSize">
+                                                                <size>
+                                                                    <width>45</width>
+                                                                    <height>45</height>
+                                                                </size>
+                                                            </property>
+                                                            <property name="locale">
+                                                                <locale language="Spanish" country="Chile"/>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>◀</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <widget class="QPushButton" name="runsNextBtn">
+                                                            <property name="sizePolicy">
+                                                                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                                                                    <horstretch>10</horstretch>
+                                                                    <verstretch>0</verstretch>
+                                                                </sizepolicy>
+                                                            </property>
+                                                            <property name="minimumSize">
+                                                                <size>
+                                                                    <width>45</width>
+                                                                    <height>45</height>
+                                                                </size>
+                                                            </property>
+                                                            <property name="maximumSize">
+                                                                <size>
+                                                                    <width>45</width>
+                                                                    <height>45</height>
+                                                                </size>
+                                                            </property>
+                                                            <property name="locale">
+                                                                <locale language="Spanish" country="Chile"/>
+                                                            </property>
+                                                            <property name="text">
+                                                                <string>▶</string>
+                                                            </property>
+                                                        </widget>
+                                                    </item>
+                                                    <item>
+                                                        <spacer name="runsHSpacer">
+                                                            <property name="orientation">
+                                                                <enum>Qt::Horizontal</enum>
+                                                            </property>
+                                                            <property name="sizeHint" stdset="0">
+                                                                <size>
+                                                                    <width>100</width>
+                                                                    <height>20</height>
+                                                                </size>
+                                                            </property>
+                                                        </spacer>
+                                                    </item>
+                                                </layout>
+                                            </item>
+                                            <item row="2" column="0">
+                                                <widget class="QGroupBox" name="runsStdinGroup">
+                                                    <property name="enabled">
+                                                        <bool>false</bool>
+                                                    </property>
+                                                    <property name="title">
+                                                        <string>Input (STD-IN)</string>
+                                                    </property>
+                                                    <layout class="QGridLayout" name="gridLayout_13">
+                                                        <item row="0" column="0">
+                                                            <widget class="QTextBrowser" name="runsStdinTBrowser">
+                                                                <property name="enabled">
+                                                                    <bool>false</bool>
+                                                                </property>
+                                                                <property name="sizePolicy">
+                                                                    <sizepolicy hsizetype="MinimumExpanding"
+                                                                                vsizetype="Expanding">
+                                                                        <horstretch>0</horstretch>
+                                                                        <verstretch>0</verstretch>
+                                                                    </sizepolicy>
+                                                                </property>
+                                                                <property name="styleSheet">
+                                                                    <string notr="true">background:transparent</string>
+                                                                </property>
+                                                                <property name="frameShape">
+                                                                    <enum>QFrame::Box</enum>
+                                                                </property>
+                                                                <property name="readOnly">
+                                                                    <bool>true</bool>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                    </layout>
+                                                </widget>
+                                            </item>
+                                            <item row="1" column="0">
+                                                <widget class="QGroupBox" name="runsDescGroup">
+                                                    <property name="enabled">
+                                                        <bool>false</bool>
+                                                    </property>
+                                                    <property name="title">
+                                                        <string>Descripcion</string>
+                                                    </property>
+                                                    <layout class="QGridLayout" name="gridLayout_11">
+                                                        <property name="leftMargin">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="topMargin">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="rightMargin">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="bottomMargin">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <property name="spacing">
+                                                            <number>0</number>
+                                                        </property>
+                                                        <item row="0" column="0">
+                                                            <widget class="QTextBrowser" name="runsDescTEdit">
+                                                                <property name="enabled">
+                                                                    <bool>false</bool>
+                                                                </property>
+                                                                <property name="sizePolicy">
+                                                                    <sizepolicy hsizetype="MinimumExpanding"
+                                                                                vsizetype="Expanding">
+                                                                        <horstretch>0</horstretch>
+                                                                        <verstretch>0</verstretch>
+                                                                    </sizepolicy>
+                                                                </property>
+                                                                <property name="autoFillBackground">
+                                                                    <bool>false</bool>
+                                                                </property>
+                                                                <property name="styleSheet">
+                                                                    <string notr="true">background:transparent</string>
+                                                                </property>
+                                                                <property name="frameShape">
+                                                                    <enum>QFrame::NoFrame</enum>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                    </layout>
+                                                </widget>
+                                            </item>
+                                            <item row="3" column="0">
+                                                <widget class="QGroupBox" name="runsStdoutGroup">
+                                                    <property name="title">
+                                                        <string>Output (STD-OUT)</string>
+                                                    </property>
+                                                    <layout class="QGridLayout" name="gridLayout_14">
+                                                        <item row="0" column="0">
+                                                            <widget class="QTextBrowser" name="runsStdoutTBrowser">
+                                                                <property name="enabled">
+                                                                    <bool>false</bool>
+                                                                </property>
+                                                                <property name="sizePolicy">
+                                                                    <sizepolicy hsizetype="MinimumExpanding"
+                                                                                vsizetype="Expanding">
+                                                                        <horstretch>0</horstretch>
+                                                                        <verstretch>0</verstretch>
+                                                                    </sizepolicy>
+                                                                </property>
+                                                                <property name="styleSheet">
+                                                                    <string notr="true">background:transparent</string>
+                                                                </property>
+                                                                <property name="frameShape">
+                                                                    <enum>QFrame::Box</enum>
+                                                                </property>
+                                                                <property name="readOnly">
+                                                                    <bool>true</bool>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                    </layout>
+                                                </widget>
+                                            </item>
+                                            <item row="4" column="0">
+                                                <widget class="QGroupBox" name="runsStderrGroup">
+                                                    <property name="title">
+                                                        <string>Errores (STD-ERR)</string>
+                                                    </property>
+                                                    <layout class="QGridLayout" name="gridLayout_15">
+                                                        <item row="0" column="0">
+                                                            <widget class="QTextBrowser" name="runsStderrTBrowser">
+                                                                <property name="enabled">
+                                                                    <bool>false</bool>
+                                                                </property>
+                                                                <property name="sizePolicy">
+                                                                    <sizepolicy hsizetype="MinimumExpanding"
+                                                                                vsizetype="Expanding">
+                                                                        <horstretch>0</horstretch>
+                                                                        <verstretch>0</verstretch>
+                                                                    </sizepolicy>
+                                                                </property>
+                                                                <property name="autoFillBackground">
+                                                                    <bool>false</bool>
+                                                                </property>
+                                                                <property name="styleSheet">
+                                                                    <string notr="true">background:transparent</string>
+                                                                </property>
+                                                                <property name="frameShape">
+                                                                    <enum>QFrame::Box</enum>
+                                                                </property>
+                                                                <property name="readOnly">
+                                                                    <bool>true</bool>
+                                                                </property>
+                                                            </widget>
+                                                        </item>
+                                                    </layout>
+                                                </widget>
+                                            </item>
+                                        </layout>
+                                    </widget>
+                                </widget>
+                            </item>
+                        </layout>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QMenuBar" name="menubar">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>1021</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <widget class="QMenu" name="menuArchivo">
+                <property name="title">
+                    <string>Archivo</string>
+                </property>
+                <addaction name="separator"/>
+                <addaction name="actionNueva_Correccion"/>
+                <addaction name="actionCargar_Correccion"/>
+                <addaction name="actionCerrar_Correccion"/>
+                <addaction name="actionGuardar"/>
+                <addaction name="actionGuardar_Como"/>
+                <addaction name="separator"/>
+                <addaction name="actionSalir"/>
+                <addaction name="actionExportar_Correccion"/>
+            </widget>
+            <widget class="QMenu" name="menuRubrica">
+                <property name="title">
+                    <string>Rubrica</string>
+                </property>
+                <addaction name="actionEditar_Rubrica"/>
+            </widget>
+            <addaction name="menuArchivo"/>
+            <addaction name="menuRubrica"/>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
+        <action name="actionNueva_Correccion">
+            <property name="text">
+                <string>Nueva Correccion</string>
+            </property>
+            <property name="iconText">
+                <string>Nueva Correcion</string>
+            </property>
+            <property name="toolTip">
+                <string>Nueva Correcion</string>
+            </property>
+            <property name="whatsThis">
+                <string/>
+            </property>
+        </action>
+        <action name="actionGuardar_Como">
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="text">
+                <string>Guardar Como</string>
+            </property>
+        </action>
+        <action name="actionSalir">
+            <property name="text">
+                <string>Salir</string>
+            </property>
+        </action>
+        <action name="actionNuevo_Alumno">
+            <property name="text">
+                <string>Nuevo Alumno</string>
+            </property>
+        </action>
+        <action name="actionEditar_Rubrica">
+            <property name="text">
+                <string>Editar Rubrica</string>
+            </property>
+        </action>
+        <action name="actionCargar_Correccion">
+            <property name="text">
+                <string>Cargar Correccion</string>
+            </property>
+        </action>
+        <action name="actionGuardar">
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="text">
+                <string>Guardar</string>
+            </property>
+        </action>
+        <action name="actionCerrar_Correccion">
+            <property name="enabled">
+                <bool>false</bool>
+            </property>
+            <property name="text">
+                <string>Cerrar Correcion</string>
+            </property>
+        </action>
+        <action name="actionExportar_Correccion">
+            <property name="text">
+                <string>Exportar Correccion</string>
+            </property>
+        </action>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>
